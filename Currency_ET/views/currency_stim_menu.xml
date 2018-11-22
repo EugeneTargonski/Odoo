@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<odoo>
+
+    currency_rate_update_wizard_form
+
+    <act_window id="action_update_rates"
+                name="UpdateRates"
+                res_model="currency.rate.update.wizard"
+                view_mode="form"
+                target = "new" />
+
+
+    <act_window id="action_currency"
+                name="Currency"
+                res_model="res.currency"
+                view_mode="tree,form" />
+
+    <menuitem id="menu_currency_top"
+              name="Currency"
+              />
+
+    <menuitem id="menu_currency"
+              name="Currency:"
+              sequence="10"
+              parent="menu_currency_top"
+              action="action_currency" />
+
+    <menuitem id='update_rate'
+              name='Update rate'
+              sequence="20"
+              parent="menu_currency_top"
+              action="action_update_rates"/>
+
+</odoo>

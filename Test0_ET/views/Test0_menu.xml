@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <act_window id="action_Test0"
+                name="Test0"
+                res_model="test0"
+                view_mode="tree,form" />
+
+    <menuitem id="menu_Test0_view"
+              name="Test0"
+              action="action_Test0"    />
+
+</odoo>

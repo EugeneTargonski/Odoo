@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="view_currency_rate_update_form_wizard" model="ir.ui.view">
+        <field name="name">Wizard</field>
+        <field name="model">currency.rate.update.wizard</field>
+        <field name="arch" type="xml">
+
+            <form> <!-- create = "false" edit = "false" delete="false" write="false"> -->
+                <field name="update_date" />
+                <footer>
+                    <button type="object"
+                            name="update_rates"
+                            string="Update rates"
+                            class="oe_highlight"
+                    />
+                    <button special="cancel" string="Cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

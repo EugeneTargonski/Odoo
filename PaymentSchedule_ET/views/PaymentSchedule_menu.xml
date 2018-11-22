@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<odoo>
+    <!-- Action to open To-do Task list -->
+    <act_window id="action_payment_schedule"
+                name="Payment Schedule"
+                res_model="model.payment_schedule"
+                view_mode="tree,form" />
+
+    <act_window id="action_document_type"
+                name="Payment Schedule"
+                res_model="model.payment_schedule.document_type"
+                view_mode="tree,form" />
+
+    <act_window id="action_business_direction"
+                name="Payment Schedule"
+                res_model="model.payment_schedule.business_direction"
+                view_mode="tree,form" />
+
+    <act_window id="action_consumption_item1"
+                name="Payment Schedule"
+                res_model="model.payment_schedule.consumption_item1"
+                view_mode="tree,form" />
+
+    <act_window id="action_consumption_item2"
+                name="Payment Schedule"
+                res_model="model.payment_schedule.consumption_item2"
+                view_mode="tree,form" />
+
+    <!-- Menu item to open To-do Task list -->
+    <menuitem id="menu_payment_schedule"
+              name="Payment Schedule" />
+
+    <menuitem id="menu_payment_schedule_schedule"
+              name="Payment Schedule"
+              sequence="10"
+              parent="menu_payment_schedule"
+              action="action_payment_schedule" />
+
+    <menuitem id="menu_payment_document_type"
+              name="Document types"
+              sequence="20"
+              parent="menu_payment_schedule"
+              action="action_document_type" />
+
+    <menuitem id="menu_payment_business_direction"
+              name="Business directions"
+              sequence="30"
+              parent="menu_payment_schedule"
+              action="action_business_direction" />
+
+    <menuitem id="menu_payment_consumption_item1"
+              name="Consumption items 1"
+              sequence="40"
+              parent="menu_payment_schedule"
+              action="action_consumption_item1" />
+
+    <menuitem id="menu_payment_consumption_item2"
+              name="Consumption items 2"
+              sequence="50"
+              parent="menu_payment_schedule"
+              action="action_consumption_item2" />
+</odoo>

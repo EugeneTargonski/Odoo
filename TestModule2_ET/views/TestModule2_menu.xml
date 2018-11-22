@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<odoo>
+    <!-- Для запуска питоновского кода из меню -->
+    <record id="action_make_testing" model="ir.actions.server">
+        <field name="name">Make Testing</field>
+        <field name="condition">True</field>
+        <field name="type">ir.actions.server</field>
+        <field name="model_id" ref="model_testmodule2" />
+        <field name="state">code</field>
+        <field name="code">env['testmodule2'].test_act()</field>
+    </record>
+
+    <!-- Для запуска питоновского кода из меню -->
+    <record id="action_make_testing2" model="ir.actions.act_window">
+        <field name="name">Make Testing2</field>
+        <field name="res_model">testmodule2.wizard</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="testmodule2_wizard_form"/>
+        <field name="target">new</field>
+    </record>
+
+    <!-- Action to open To-do Task list -->
+    <act_window id="action_TestModule2_Tree"
+                name="TestModule2"
+                res_model="testmodule2"
+                view_mode="tree,form" 
+				/>
+
+    <act_window id="action_TestModule2_Form1"
+                name="TestModule2"
+                res_model="testmodule2"
+                view_mode="form"
+                context = "{'default_name':'444'}"
+				/>
+
+
+    <act_window id="action_TestModule2_Wizard"
+                name="TestModule2"
+                res_model="testmodule2.wizard"
+                view_mode="form"
+                target = "new"
+				/>
+				
+
+
+
+
+    <!-- Menu item to open To-do Task list -->
+
+    <menuitem id="menu_TestModule2"
+              name="TestModule2"
+              />
+
+    <menuitem id="menu_TestModule_tree_view"
+              name="TestModule2 Tree"
+              parent="menu_TestModule2"
+              sequence="10"
+              action="action_TestModule2_Tree"    />
+
+    <menuitem id="menu_TestModule_form_view1"
+              name="TestModule2 Form1 (New)"
+              parent="menu_TestModule2"
+              sequence="11"
+              action="action_TestModule2_Form1"    />
+
+    <menuitem id="menu_TestModule_wizard_view"
+              name="TestModule2 Wizard"
+              parent="menu_TestModule2"
+              sequence="12"
+              action="action_TestModule2_Wizard"    />
+
+
+    <menuitem id="menu_TestModule_config"
+              name="Тут можно добавлять подменю, нет экшна"
+              parent="menu_TestModule2"
+              sequence="100"
+              groups="base.group_system"    />
+
+    <menuitem id='menu_testing' name='Testing' sequence="10" parent="menu_TestModule_config" action="action_make_testing"/>
+    <menuitem id='menu_testing2' name='Testing2' sequence="12" parent="menu_TestModule_config" action="action_make_testing2"/>
+
+    <menuitem id="menu_TestModule_form_view3"
+              name="TestModule2 Form1 (New)"
+              parent="menu_TestModule_config"
+              sequence="101"
+              action="action_TestModule2_Form1"    />
+
+
+
+</odoo>

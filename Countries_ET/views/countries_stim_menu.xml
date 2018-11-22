@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <act_window id="action_countries"
+                name="Countries"
+                res_model="res.country"
+                view_mode="tree,form" />
+
+    <act_window id="action_states"
+                name="Countries states"
+                res_model="res.country.state"
+                view_mode="tree,form" />
+
+    <act_window id="action_groups"
+                name="Countries groups"
+                res_model="res.country.group"
+                view_mode="tree,form" />
+
+    <menuitem id="menu_countries_top"
+              name="Countries"
+              />
+
+    <menuitem id="menu_countries"
+              name="Countries:"
+              sequence="10"
+              parent="menu_countries_top"
+              action="action_countries" />
+
+    <menuitem id='menu_states'
+              name='States:'
+              sequence="20"
+              parent="menu_countries_top"
+              action="action_states"/>
+
+    <menuitem id='menu_groups'
+              name='Groups:'
+              sequence="20"
+              parent="menu_countries_top"
+              action="action_groups"/>
+
+</odoo>

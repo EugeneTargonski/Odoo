@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <!-- Run code from menu -->
+    <record id="action_load_data" model="ir.actions.server">
+        <field name="name">Load Data</field>
+        <field name="condition">True</field>
+        <field name="type">ir.actions.server</field>
+        <field name="model_id" ref="model_mssql_connect" />
+        <field name="state">code</field>
+        <field name="code">env['mssql.connect'].loadfromsql()</field>
+    </record>
+
+
+    <!-- Action to open list/form -->
+    <act_window id="action_MSSQLConnect_Tree"
+                name="MSSQLConnect"
+                res_model="mssql.connect"
+                view_mode="tree,form" 
+				/>
+				
+    <act_window id="action_MSSQLConnect_Wizard"
+                name="MSSQLConnect"
+                res_model="mssql.connect.wizard"
+                view_mode="form"
+                target = "new"				
+				/>				
+				
+				
+
+
+	<!-- Menu items -->
+
+    <menuitem id="menu_MSSQLConnect"
+              name="MSSQLConnect main menu"
+              />
+	<!--
+    <menuitem id="menu_MSSQLConnect_tree_view"
+				name="MSSQLConnect Tree"
+				parent="menu_MSSQLConnect"
+				sequence="10"
+				action="action_MSSQLConnect_Tree"    />
+	-->		
+			
+				
+    <menuitem id="menu_MSSQLConnect_tree_Wizard"
+				name="MSSQLConnect Wizard"
+				parent="menu_MSSQLConnect"
+				sequence="15"
+				action="action_MSSQLConnect_Wizard"
+				/>	
+				
+	<!--		  
+    <menuitem id="menu_MSSQLConnect_load_data"
+				name="Load Data"
+				parent="menu_MSSQLConnect"
+				sequence="20"
+				action="action_load_data"    />	
+	-->		
+
+</odoo>

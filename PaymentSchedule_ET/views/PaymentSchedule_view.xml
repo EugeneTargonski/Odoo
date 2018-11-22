@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="view_form_payment_schedule" model = "ir.ui.view">
+        <field name="name">Payment Schedule form</field>
+        <field name="model">model.payment_schedule</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="button1" type="object"
+                            string = "Button1"/>
+                    <button name="button2" type="object"
+                            string = "Button2"/>
+                    <button name="button3" type="object"
+                            string = "Button3"/>
+                </header>
+                <sheet>
+                  <group name="group1">
+                      <group name="group11">
+                          <field name="our_company_id"/>
+                          <field name="document_type_id"/>
+                          <field name="name"/>
+                          <field name="date_document"/>
+                          <field name="sum_payment"/>
+                          <field name="currency_id"/>
+                          <field name="sum_payment_recount"/>
+                          <field name="company_id"/>
+                          <field name="date_desired"/>
+                          <field name="reason"/>
+                      </group>
+                      <group name="group12">
+                          <field name="user_id"/>
+                          <field name="date_transfer"/>
+                          <field name="date_payment"/>
+                          <field name="payment_approved"/>
+                      </group>
+                      <group name="group21">
+                          <field name="businessdirection_id"/>
+                          <field name="consumptionitem1_id" domain="[('businessdirection_id','=',businessdirection_id)]"/>
+                          <field name="consumptionitem2_id" domain="[('consumptionitem1_id','=',consumptionitem1_id)]"/>
+                      </group>
+                      <group name="group22">
+                          <field name="datetime_create"/>
+                      </group>
+                  </group>
+</sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_tree_payment_schedule" model = "ir.ui.view">
+    <field name="name">Payment Schedule</field>
+    <field name="model">model.payment_schedule</field>
+    <field name="arch" type="xml">
+
+        <tree>
+            <!-- <button name="call_function" string="Process" type="object" help="calls python function" /> -->
+            <field name="name"/>
+            <field name="date_payment"/>
+            <field name="datetime_create"/>
+        </tree>
+      </field>
+    </record>
+</odoo>
+
+

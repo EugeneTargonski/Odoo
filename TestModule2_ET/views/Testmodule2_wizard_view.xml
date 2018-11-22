@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="testmodule2_wizard_form" model="ir.ui.view">
+        <field name="name">Wizard</field>
+        <field name="model">testmodule2.wizard</field>
+        <field name="arch" type="xml">
+
+            <form> <!-- create = "false" edit = "false" delete="false" write="false"> -->
+
+                <div class="oe_right">
+                    <button type="object"
+                            name="massbutton1"
+                            string="Mass Button1" />
+                </div>
+
+                <field name="new_date" />
+
+                <footer>
+                    <button type="object"
+                            name="action1"
+                            string="Action 1"
+                            class="oe_highlight"
+                    />
+                    <button special="cancel" string="Cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+
+
+    <record id="testmodule2_wizard" model="ir.actions.act_window">
+          <field name="name">Хз что за имя тут надо и зачем</field>
+          <field name="res_model">testmodule2.wizard</field>
+          <field name="view_type">form</field>
+         <field name="view_mode">form</field>
+         <field name="view_id" ref="testmodule2_wizard_form" />
+     </record>
+
+</odoo>

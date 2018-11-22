@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="view_form_testmodule2" model = "ir.ui.view">
+        <field name="name">TestModule2 Form</field>
+        <field name="model">testmodule2</field>
+        <field name="arch" type="xml">
+              <form string="TestModule2">
+                  <header>
+                      <button name="btn1" type="object"
+                              string = "Button1"/>
+                      <button name="btn2" type="object"
+                              string = "Button2"
+                              confirm = "Ты б..ть уверен?"
+                      />
+                      <button name="btn3" type="object"
+                              string = "Button3"/>
+                      <button name="btn4" type="object"
+                              string = "Button4"/>
+                      <button name="btn5" type="object"
+                              string = "Button5"/>
+                      <button name="btn6" type="object"
+                              string = "Button6"/>
+                      <button name="btn7" type="object"
+                              string = "Button7"/>
+                      <button name="btn8" type="object"
+                              string = "Button8"/>							  
+                      <button name="btn9" type="object"
+                              string = "Button9"/>
+                      <button name="btn10" type="object"
+                              string = "Button10"/>
+					  <button name="testwebserv" type="object"
+                              string = "test web-serv"/>
+                      
+
+                  </header>
+                  <sheet>
+                      <group name="group1">
+                          <group name="group11">
+                              <field name="name"/>
+                              <field name="sf1"/>
+                              <field name="sf2"/>
+                              <field name="sf3"/>
+                              <field name="sf4"/>
+                          </group>
+                          <group name="group12">
+                              <field name="active" readonly="1"/>
+                              <field name="bool1"/>
+                              <field name="bool2"/>
+                              <field name="bool3"/>
+                              <field name="bool4"/>
+                          </group>
+                          <group name="group13">
+                              <field name="company_id"/>
+                              <field name="user_id"/>
+                          </group>
+
+                      </group>
+                  </sheet>
+              </form>
+        </field>
+    </record>
+
+
+    <record id="view_tree_test" model = "ir.ui.view">
+    <field name="name">Testmodule2 Tree</field>
+    <field name="model">testmodule2</field>
+    <field name="arch" type="xml">
+
+        <tree colors="decoration-muted:is_done==True">
+
+             <field name="name"/>
+             <field name="sf1"/>
+             <field name="sf2"/>
+             <field name="sf3"/>
+             <field name="sf4"/>
+             <field name="id"/>
+             <field name="create_date"/>
+             <field name="create_uid"/>
+             <field name="display_name"/>
+             <field name="__last_update"/>
+             <field name="write_date"/>
+             <field name="write_uid"/>
+
+
+
+        </tree>
+      </field>
+    </record>
+
+
+</odoo>

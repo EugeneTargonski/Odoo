@@ -1,0 +1,266 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* PaymentSchedule
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-10-22 16:46+0000\n"
+"PO-Revision-Date: 2018-10-22 16:46+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: PaymentSchedule
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_businessdirection_id
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_consumption_item1_businessdirection_id
+msgid "Business Direction"
+msgstr "Направление деятельности"
+
+#. module: PaymentSchedule
+#: model:ir.ui.menu,name:PaymentSchedule.menu_payment_business_direction
+msgid "Business directions"
+msgstr "Направления деятельности"
+
+#. module: PaymentSchedule
+#: model:ir.ui.view,arch_db:PaymentSchedule.view_form_payment_schedule
+msgid "Button1"
+msgstr "Кнопка1"
+
+#. module: PaymentSchedule
+#: model:ir.ui.view,arch_db:PaymentSchedule.view_form_payment_schedule
+msgid "Button2"
+msgstr "Кнопка2"
+
+#. module: PaymentSchedule
+#: model:ir.ui.view,arch_db:PaymentSchedule.view_form_payment_schedule
+msgid "Button3"
+msgstr "Кнопка3"
+
+#. module: PaymentSchedule
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_company_id
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_our_company_id
+msgid "Company"
+msgstr "Организация"
+
+#. module: PaymentSchedule
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_consumption_item2_consumptionitem1_id
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_consumptionitem1_id
+msgid "Consumption Item 1"
+msgstr "Статья затрат"
+
+#. module: PaymentSchedule
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_consumptionitem2_id
+msgid "Consumption Item 2"
+msgstr "Подстатья затрат"
+
+#. module: PaymentSchedule
+#: model:ir.ui.menu,name:PaymentSchedule.menu_payment_consumption_item1
+msgid "Consumption items 1"
+msgstr "Статьи затрат"
+
+#. module: PaymentSchedule
+#: model:ir.ui.menu,name:PaymentSchedule.menu_payment_consumption_item2
+msgid "Consumption items 2"
+msgstr "Подстатьи затрат"
+
+#. module: PaymentSchedule
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_business_direction_create_uid
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_consumption_item1_create_uid
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_consumption_item2_create_uid
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_create_uid
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_document_type_create_uid
+msgid "Created by"
+msgstr "Created by"
+
+#. module: PaymentSchedule
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_business_direction_create_date
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_consumption_item1_create_date
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_consumption_item2_create_date
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_create_date
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_document_type_create_date
+msgid "Created on"
+msgstr "Created on"
+
+#. module: PaymentSchedule
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_currency_id
+msgid "Currency"
+msgstr "Валюта"
+
+#. module: PaymentSchedule
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_date_payment
+msgid "Date of payment"
+msgstr "Дата платежа"
+
+#. module: PaymentSchedule
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_date_desired
+msgid "Desired date of payment"
+msgstr "Желаемая дата платежа"
+
+#. module: PaymentSchedule
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_business_direction_display_name
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_consumption_item1_display_name
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_consumption_item2_display_name
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_display_name
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_document_type_display_name
+msgid "Display Name"
+msgstr "Display Name"
+
+#. module: PaymentSchedule
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_datetime_create
+msgid "Document created"
+msgstr "Document created"
+
+#. module: PaymentSchedule
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_date_document
+msgid "Document date"
+msgstr "Дата документа"
+
+#. module: PaymentSchedule
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_name
+msgid "Document number"
+msgstr "Номер документа"
+
+#. module: PaymentSchedule
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_document_type_id_2581
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_document_type_name
+msgid "Document type"
+msgstr "Вид документа"
+
+#. module: PaymentSchedule
+#: model:ir.ui.menu,name:PaymentSchedule.menu_payment_document_type
+msgid "Document types"
+msgstr "Виды документов"
+
+#. module: PaymentSchedule
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_sum_payment_recount
+msgid "EUR"
+msgstr "EUR"
+
+#. module: PaymentSchedule
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_business_direction_id
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_consumption_item1_id
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_consumption_item2_id
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_document_type_id
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_id
+msgid "ID"
+msgstr "ID"
+
+#. module: PaymentSchedule
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule___last_update
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_business_direction___last_update
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_consumption_item1___last_update
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_consumption_item2___last_update
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_document_type___last_update
+msgid "Last Modified on"
+msgstr "Last Modified on"
+
+#. module: PaymentSchedule
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_business_direction_write_uid
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_consumption_item1_write_uid
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_consumption_item2_write_uid
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_document_type_write_uid
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_write_uid
+msgid "Last Updated by"
+msgstr "Last Updated by"
+
+#. module: PaymentSchedule
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_business_direction_write_date
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_consumption_item1_write_date
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_consumption_item2_write_date
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_document_type_write_date
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_write_date
+msgid "Last Updated on"
+msgstr "Last Updated on"
+
+#. module: PaymentSchedule
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_business_direction_name
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_consumption_item1_name
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_consumption_item2_name
+msgid "Name"
+msgstr "Наименование"
+
+#. module: PaymentSchedule
+#: model:ir.actions.act_window,name:PaymentSchedule.action_business_direction
+#: model:ir.actions.act_window,name:PaymentSchedule.action_consumption_item1
+#: model:ir.actions.act_window,name:PaymentSchedule.action_consumption_item2
+#: model:ir.actions.act_window,name:PaymentSchedule.action_document_type
+#: model:ir.actions.act_window,name:PaymentSchedule.action_payment_schedule
+#: model:ir.model,name:PaymentSchedule.model_model_payment_schedule
+#: model:ir.model,name:PaymentSchedule.model_paymentschedule
+#: model:ir.ui.menu,name:PaymentSchedule.menu_payment_schedule
+#: model:ir.ui.menu,name:PaymentSchedule.menu_payment_schedule_schedule
+msgid "Payment Schedule"
+msgstr "Платежный календарь"
+
+#. module: PaymentSchedule
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_payment_approved
+msgid "Payment approved"
+msgstr "Платеж одобрен"
+
+#. module: PaymentSchedule
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_reason
+msgid "Reason"
+msgstr "Назначение платежа"
+
+#. module: PaymentSchedule
+#: model:ir.actions.server,name:PaymentSchedule.cron_do_task_ir_actions_server
+#: model:ir.cron,cron_name:PaymentSchedule.cron_do_task
+#: model:ir.cron,name:PaymentSchedule.cron_do_task
+msgid "Recount sum"
+msgstr "Пересчет суммы"
+
+#. module: PaymentSchedule
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_user_id
+msgid "Responsible"
+msgstr "Ответственный"
+
+#. module: PaymentSchedule
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_date_transfer
+msgid "Transfer date of payment"
+msgstr "Перенос даты платежа"
+
+#. module: PaymentSchedule
+#: model:ir.model,name:PaymentSchedule.model_model_payment_schedule_business_direction
+msgid "model.payment_schedule.business_direction"
+msgstr "model.payment_schedule.business_direction"
+
+#. module: PaymentSchedule
+#: model:ir.model,name:PaymentSchedule.model_model_payment_schedule_consumption_item1
+msgid "model.payment_schedule.consumption_item1"
+msgstr "model.payment_schedule.consumption_item1"
+
+#. module: PaymentSchedule
+#: model:ir.model,name:PaymentSchedule.model_model_payment_schedule_consumption_item2
+msgid "model.payment_schedule.consumption_item2"
+msgstr "model.payment_schedule.consumption_item2"
+
+#. module: PaymentSchedule
+#: model:ir.model,name:PaymentSchedule.model_model_payment_schedule_document_type
+msgid "model.payment_schedule.document_type"
+msgstr "model.payment_schedule.document_type"
+
+#. module: PaymentSchedule
+#: model:ir.model,name:PaymentSchedule.model_model_scheduler
+msgid "model.scheduler"
+msgstr "model.scheduler"
+
+#. module: PaymentSchedule
+#: model:ir.model,name:PaymentSchedule.model_my_task
+msgid "my.task"
+msgstr "my.task"
+
+#. module: PaymentSchedule
+#: model:ir.model,name:PaymentSchedule.model_paymentschedule_documenttype
+msgid "paymentschedule.documenttype"
+msgstr "paymentschedule.documenttype"
+
+#. module: PaymentSchedule
+#: model:ir.model.fields,field_description:PaymentSchedule.field_model_payment_schedule_sum_payment
+msgid "total"
+msgstr "итого"
+

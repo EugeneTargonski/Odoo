@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <act_window id="action_partner"
+                name="Partner"
+                res_model="res.partner"
+                view_mode="tree,form" />
+
+
+    <menuitem id="menu_partners_top"
+              name="Partners"
+              />
+
+    <menuitem id="menu_partner"
+              name="Partners:"
+              sequence="10"
+              parent="menu_partners_top"
+              action="action_partner" />
+
+
+</odoo>

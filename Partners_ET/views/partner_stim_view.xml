@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+
+<odoo>
+    <record id="view_partner_form_extended" model = "ir.ui.view">
+      <field name="name">res.partner.form.extended</field>
+      <field name="model">res.partner</field>
+      <field name="inherit_id" ref="base.view_partner_form"/>
+      <field name="arch" type="xml">
+
+          <field name="name" position="after">
+              <field name="full_name" />
+          </field>
+
+          <xpath expr="//field[@name='vat']" position="after">
+                <field name="kpp"/>
+          </xpath>
+
+
+
+          <xpath expr="//form/sheet/notebook/page[1]" position="before">
+               <page string="Gal Info">
+                   <group>
+                      <group>
+
+                          <field name="gal_db1" />
+                          <field name="gal_db2" />
+                          <field name="gal_db3" />
+                          <field name="gal_db4" />
+                          <field name="ext_id" />
+
+                       </group>
+                    </group>
+               </page>
+
+          </xpath>
+
+
+      </field>
+    </record>
+
+
+    <!--
+    <record id="todo_app.menu_todo_task" model="ir.ui.menu">
+        <field name="name">
+            New name of To Do
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="todo_app.action_todo_task">
+        <field name="context">
+            {'search_default_filter_my_tasks':True}
+        </field>
+    </record>
+    -->
+
+</odoo>

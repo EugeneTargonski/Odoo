@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<odoo>
+	<!--
+    <record id="view_form_mssql_connect" model = "ir.ui.view">
+        <field name="name">MSSQLConnect Form</field>
+        <field name="model">mssql.connect</field>
+        <field name="arch" type="xml">
+              <form string="MSSQLConnect">
+                  <header>
+                  </header>
+                  <sheet>
+                      <group name="group1">
+                          <group name="group11">
+                              <field name="name"/>
+                              <field name="date_field1"/>
+                              <field name="float1"/>
+                              <field name="int1"/>
+							  <field name="string1"/>
+							  <field name="string2"/>
+                          </group>
+                      </group>
+                  </sheet>
+              </form>
+        </field>
+    </record>
+	-->
+
+	<!--
+    <record id="view_tree_mssql_connect" model = "ir.ui.view">
+    <field name="name">MSSQLConnect Tree</field>
+    <field name="model">mssql.connect</field>
+    <field name="arch" type="xml">
+        <tree>
+			<field name="name"/>
+			<field name="date_field1"/>
+			<field name="float1"/>
+			<field name="int1"/>
+			<field name="string1"/>
+			<field name="string2"/>
+			<field name="create_date"/>
+        </tree>
+      </field>
+    </record>
+	-->	
+	
+  <record id="view_mssql_connect_wizard" model="ir.ui.view">
+    <field name="name">MSSQLConnect Wizard</field>
+    <field name="model">mssql.connect.wizard</field>
+    <field name="arch" type="xml">
+
+      <form>
+        <div class="oe_right">
+          <button type="object"
+            name="get_data"
+            string="get data" />
+        </div>
+		
+		<field name="request_date"/>
+		
+        <field name="mssql_ids">
+          <tree>
+			<field name="name"/>
+			<field name="date_field1"/>
+			<field name="float1"/>
+			<field name="int1"/>
+			<field name="string1"/>
+			<field name="string2"/>
+			<field name="create_date"/>
+          </tree>
+        </field>
+		
+        <footer>
+          <button special="cancel" string="Cancel"/>
+        </footer>
+      </form>
+    </field>
+  </record>
+
+
+</odoo>

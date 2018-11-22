@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<odoo>
+    <record id="view_currency_form_extended" model = "ir.ui.view">
+      <field name="name">currency.form.extended</field>
+      <field name="model">res.currency</field>
+      <field name="inherit_id" ref="base.view_currency_form"/>
+      <field name="arch" type="xml">
+
+          <field name="name" position="after">
+              <field name="symbol" />
+          </field>
+
+      </field>
+    </record>
+
+    <record id="view_currency_rate_form_extended" model = "ir.ui.view">
+      <field name="name">currency.rate.form.extended</field>
+      <field name="model">res.currency.rate</field>
+      <field name="inherit_id" ref="base.view_currency_rate_form"/>
+      <field name="arch" type="xml">
+
+          <field name="name" position="after">
+              <field name="cur_scale"/>
+              <field name="cur_official_rate"/>
+          </field>
+
+      </field>
+    </record>
+
+    <record id="view_currency_rate_tree_extended" model = "ir.ui.view">
+      <field name="name">currency.rate.tree.extended</field>
+      <field name="model">res.currency.rate</field>
+      <field name="inherit_id" ref="base.view_currency_rate_tree"/>
+      <field name="arch" type="xml">
+
+          <field name="name" position="after">
+              <field name="cur_scale"/>
+              <field name="cur_official_rate"/>
+          </field>
+
+      </field>
+    </record>
+
+
+</odoo>
