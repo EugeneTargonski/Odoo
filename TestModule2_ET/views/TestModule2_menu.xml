@@ -41,7 +41,14 @@
                 view_mode="form"
                 target = "new"
 				/>
-				
+
+    <record model="ir.actions.act_window" id="action_TestModule2_group">
+        <field name="name">Test module 2</field>
+        <field name="res_model">testmodule2</field>
+        <field name="context">{'group_by':('create_uid','name')}</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+		
 
 
 
@@ -70,15 +77,29 @@
               sequence="12"
               action="action_TestModule2_Wizard"    />
 
-
     <menuitem id="menu_TestModule_config"
               name="Тут можно добавлять подменю, нет экшна"
               parent="menu_TestModule2"
               sequence="100"
               groups="base.group_system"    />
 
-    <menuitem id='menu_testing' name='Testing' sequence="10" parent="menu_TestModule_config" action="action_make_testing"/>
-    <menuitem id='menu_testing2' name='Testing2' sequence="12" parent="menu_TestModule_config" action="action_make_testing2"/>
+    <menuitem id='menu_group' 
+              name='Group view' 
+              sequence="10" 
+              parent="menu_TestModule_config" 
+              action="action_TestModule2_group"/>              
+
+    <menuitem id='menu_testing' 
+              name='Testing' 
+              sequence="10" 
+              parent="menu_TestModule_config" 
+              action="action_make_testing"/>
+
+    <menuitem id='menu_testing2' 
+              name='Testing2' 
+              sequence="12" 
+              parent="menu_TestModule_config" 
+              action="action_make_testing2"/>
 
     <menuitem id="menu_TestModule_form_view3"
               name="TestModule2 Form1 (New)"

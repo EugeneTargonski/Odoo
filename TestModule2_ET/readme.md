@@ -1,0 +1,1 @@
+#model with samples of some tech

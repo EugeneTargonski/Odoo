@@ -7,5 +7,4 @@
     'application': True,
     'version': '0.1',
     'data': ['views/Test0_menu.xml'],
-
 }

@@ -1,0 +1,1 @@
+#symplest model with some fields

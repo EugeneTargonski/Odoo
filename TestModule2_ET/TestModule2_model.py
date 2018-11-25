@@ -9,21 +9,20 @@ import pyodbc
 
 class Pwd:
 
-    def __init__(self):
+    def __init__(self): #empty function
         pass
 
-    def newpwd(self):
+    def newpwd(self): #generating new pass function 
         sequence = 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM09876543210987654321'
         i = 1
-        maxpwd = 8
+        maxpwd = 8 #normally must be const
         pwd = ''
         while i <= maxpwd:
             pwd = pwd + random.choice(sequence)
             i = i+1
-
         return pwd
 
-class TestModule2Wizard(models.TransientModel):
+class TestModule2Wizard(models.TransientModel): #testing wizard class
     _name = 'testmodule2.wizard'
     _description = 'testing wizard'
     new_date = fields.Date('New date')
@@ -40,11 +39,11 @@ class TestModule2Wizard(models.TransientModel):
             'target': 'new'}
 
     @api.multi
-    def massbutton1(self):
+    def massbutton1(self): #empty function for button on wizard
         return self._reopen_form()
 
     @api.multi
-    def action1(self):
+    def action1(self): #empty function for button on wizard
         return True
 
 
@@ -53,7 +52,7 @@ class TestModule2Wizard(models.TransientModel):
 
 
 
-class TestModule2(models.Model):
+class TestModule2(models.Model): #testing class. conteins some tech on button functions
     _name = 'testmodule2'
     _description = 'TestModule2'
     name = fields.Char('Name', required=True)
@@ -74,8 +73,8 @@ class TestModule2(models.Model):
     PwdGen = Pwd
 
     @api.model
-    def create(self, vals):
-        vals['sf1']='aaaaa, bliat'
+    def create(self, vals): #fills sf1 field with 'aaaaa, blin' value on create
+        vals['sf1']='aaaaa, blin'
         new_record = super(TestModule2, self).create(vals)
         return new_record
 
